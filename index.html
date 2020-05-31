@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contrast Motion</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top, .bottom {
+      height: 50vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-image: linear-gradient(to right, white , black);
+    }
+
+    .bottom {
+      background-image: linear-gradient(to right, black , white);
+    }
+
+    .black, .white {
+      width: 28vmin;
+      height: 28vmin;
+      margin: 1em;
+      
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    .white {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <section class="top">
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+  </section>
+
+  <section class="bottom">
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+  </section>
+</body>
+</html>
